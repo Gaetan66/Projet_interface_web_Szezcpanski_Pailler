@@ -1,0 +1,27 @@
+$nb_colonnes: 12;
+$largeur_gouttiere: 1%;
+$nb_gouttieres: $nb_colonnes+1;
+$largeur_colonne: (100% - ($nb_gouttieres * $largeur_gouttiere)) / $nb_colonnes;
+
+
+
+@mixin offset($n){
+    margin-left: $n * $largeur_colonne + $n+1 * $largeur_gouttiere;
+}
+
+@mixin col($x){
+    width: $x * $largeur_colonne + ($x - 1) * $largeur_gouttiere;
+    margin-left: $largeur_gouttiere;
+}
+
+
+@media screen and (600px<width) {
+    @for $i from 1 through $nb_colonnes{
+        %l#{$i}{
+            @include col($i)
+        }
+        %offset-l#{$i} {
+            @include offset($i);
+        }
+    }
+}

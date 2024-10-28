@@ -1,1 +1,14 @@
-@import "grille_xs";
+@import "header";
+@import "grille_m";
+
+
+%row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+main{
+    @extend %row;
+}

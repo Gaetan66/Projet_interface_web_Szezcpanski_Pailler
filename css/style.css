@@ -1,14 +1,32 @@
 header {
+  width: 99.5%;
   border: 1px black solid;
 }
-header div {
-  border: 1px black solid;
-}
-header nav {
-  border: 1px black solid;
+header #headiv h1 {
+  font-weight: bold;
 }
 header p {
-  border: 1px black solid;
+  color: lightslategray;
+}
+
+@media screen and (600px < width) {
+  footer, main #art6, main #art5, main #art2, main nav {
+    width: 23.75%;
+    margin-left: 1%;
+  }
+  main #art10, main #art9, main #art8, main #art7, main #art4, main #art3, main #art1 {
+    width: 48.5%;
+    margin-left: 1%;
+  }
+  footer {
+    margin-left: 75.25%;
+  }
+}
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=style.css.map */

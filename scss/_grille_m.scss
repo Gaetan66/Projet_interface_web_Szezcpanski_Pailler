@@ -1,0 +1,53 @@
+@import 'placeholder_m';
+
+main{
+    nav{
+        @extend %m1;
+    }
+
+    #art1{
+        @extend %m2;
+    }
+
+    #art2{
+        @extend %m1;
+    }
+
+    #art3{
+        @extend %m2;
+    }
+
+    #art4{
+        @extend %m2;
+    }
+
+    #art5{
+        @extend %m1;
+    }
+
+    #art6{
+        @extend %m1;
+    }
+
+    #art7{
+        @extend %m2;
+    }
+
+    #art8{
+        @extend %m2;
+    }
+
+    #art9{
+        @extend %m2;
+    }
+
+    #art10{
+        @extend %m2;
+    }
+
+}
+
+footer{
+    @extend %offset-m3;
+    @extend %m1;
+}
