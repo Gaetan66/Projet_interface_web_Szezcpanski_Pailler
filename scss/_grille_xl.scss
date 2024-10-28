@@ -3,52 +3,52 @@
 main{
 
     nav{
-        @extend %l2;
+        @extend %xl2;
     }
 
     #art1{
-        @extend %l4;
+        @extend %xl4;
     }
 
     #art2{
-        @extend %l4;
+        @extend %xl4;
     }
 
     #art3{
-        @extend %l2;
+        @extend %xl2;
     }
 
     #art4{
-        @extend %l4;
+        @extend %xl4;
     }
 
     #art5{
-        @extend %l2;
+        @extend %xl2;
     }
 
     #art6{
-        @extend %l2;
+        @extend %xl2;
     }
 
     #art7{
-        @extend %l4;
+        @extend %xl4;
     }
 
     #art8{
-        @extend %l4;
+        @extend %xl4;
     }
 
     #art9{
-        @extend %l4;
+        @extend %xl4;
     }
 
     #art10{
-        @extend %l4;
+        @extend %xl4;
     }
 
 }
 
 footer{
-    @extend %offset-l8;
-    @extend %l3;
+    @extend %offset-xl8;
+    @extend %xl3;
 }

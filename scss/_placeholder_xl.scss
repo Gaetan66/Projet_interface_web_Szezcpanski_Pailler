@@ -17,10 +17,10 @@ $largeur_colonne: (100% - ($nb_gouttieres * $largeur_gouttiere)) / $nb_colonnes;
 
 @media screen and (600px<width) {
     @for $i from 1 through $nb_colonnes{
-        %l#{$i}{
+        %xl#{$i}{
             @include col($i)
         }
-        %offset-l#{$i} {
+        %offset-xl#{$i} {
             @include offset($i);
         }
     }
