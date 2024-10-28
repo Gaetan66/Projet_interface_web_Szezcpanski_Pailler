@@ -1,0 +1,54 @@
+@import "placeholder_xl";
+
+main{
+
+    nav{
+        @extend %l2;
+    }
+
+    #art1{
+        @extend %l4;
+    }
+
+    #art2{
+        @extend %l4;
+    }
+
+    #art3{
+        @extend %l2;
+    }
+
+    #art4{
+        @extend %l4;
+    }
+
+    #art5{
+        @extend %l2;
+    }
+
+    #art6{
+        @extend %l2;
+    }
+
+    #art7{
+        @extend %l4;
+    }
+
+    #art8{
+        @extend %l4;
+    }
+
+    #art9{
+        @extend %l4;
+    }
+
+    #art10{
+        @extend %l4;
+    }
+
+}
+
+footer{
+    @extend %offset-l8;
+    @extend %l3;
+}

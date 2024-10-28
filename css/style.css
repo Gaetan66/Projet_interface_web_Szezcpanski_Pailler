@@ -10,16 +10,20 @@ header p {
 }
 
 @media screen and (600px < width) {
-  footer, main #art6, main #art5, main #art2, main nav {
-    width: 23.75%;
-    margin-left: 1%;
-  }
-  main #art10, main #art9, main #art8, main #art7, main #art4, main #art3, main #art1 {
-    width: 48.5%;
+  main #art6, main #art5, main #art3, main nav {
+    width: 15.5%;
     margin-left: 1%;
   }
   footer {
-    margin-left: 75.25%;
+    width: 23.75%;
+    margin-left: 1%;
+  }
+  main #art10, main #art9, main #art8, main #art7, main #art4, main #art2, main #art1 {
+    width: 32%;
+    margin-left: 1%;
+  }
+  footer {
+    margin-left: 67%;
   }
 }
 main {
