@@ -77,6 +77,10 @@ main nav div a:nth-child(13) {
   grid-column: 2/3;
   grid-row: 13;
 }
+main nav div img:nth-child(1) {
+  grid-column: 1/2;
+  grid-row: 1;
+}
 
 .mainart {
   border: 1px solid gray;

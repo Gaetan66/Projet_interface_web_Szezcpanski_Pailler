@@ -18,5 +18,9 @@ main nav{
                 grid-row: #{$i};
             }
         }
+        img:nth-child(1){
+            grid-column: 1/2;
+            grid-row: 1;
+        }
     }
 }
