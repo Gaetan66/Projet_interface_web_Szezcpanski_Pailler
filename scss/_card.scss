@@ -1,7 +1,11 @@
-.mainart{
-    border : 1px solid gray;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.mainart {
+    border: 1px solid gray;
     border-radius: 3px;
-    box-shadow: 0px 4px 8px gray; 
+    box-shadow: 0px 4px 8px gray;
+    overflow: hidden;
+    transition: transform 0.3s ease;
 
     &:hover {
         transform: scale(1.02);
@@ -9,16 +13,31 @@
 
     h3 {
         font-size: 1.2rem;
-        font-weight: bold; 
-        color: rgb(255,140,0);
-        margin: 0.5rem 0; 
+        font-family: 'Fira Sans Condensed', sans-serif;
+        font-weight: bold;
+        color: #f57c00;
+        margin: 0.5rem 0;
+        &::after {
+            content: "";
+            display: block;
+            width: 40px;
+            height: 5px;
+            background-color: #333;
+            margin-top: 0.3em;
+        }
     }
 
-    .blackspace{
-        width: 40px; 
-        height: 5px; 
-        background-color: #333; 
-        margin: 0.5em 0 0 0.3em; 
+    a{
+        display: block;
     }
 
+    div a:first-of-type{
+        text-decoration: underline;
+    }
+
+    
+    p{
+        font-family: 'Fira Sans Condensed', sans-serif;
+    }
 }
+
