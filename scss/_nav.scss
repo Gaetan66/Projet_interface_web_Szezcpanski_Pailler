@@ -1,0 +1,22 @@
+main nav{
+    color: #f57c00;
+    #titnav{
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    div{
+        padding-left: 10px;
+        display: grid;
+        grid-template-columns: 24px auto;
+        align-items: center;
+        gap: 10px;
+        
+        @for $i from 1 through 13 {
+            a:nth-child(#{$i}) {
+                grid-column: 2 / 3;
+                grid-row: #{$i};
+            }
+        }
+    }
+}
