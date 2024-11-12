@@ -1,7 +1,7 @@
 $nb_colonnes: 4;
 $largeur_gouttiere: 1%;
 $nb_gouttieres: $nb_colonnes+1;
-$largeur_colonne: (100% - ($nb_gouttieres * $largeur_gouttiere)) / $nb_colonnes;
+$largeur_colonne: calc((100% - ($nb_gouttieres * $largeur_gouttiere)) / $nb_colonnes);
 
 
 
@@ -15,7 +15,7 @@ $largeur_colonne: (100% - ($nb_gouttieres * $largeur_gouttiere)) / $nb_colonnes;
 }
 
 
-@media screen and (600px<width) {
+@media screen and (960px<width) {
     @for $i from 1 through $nb_colonnes{
         %m#{$i}{
             @include col($i)

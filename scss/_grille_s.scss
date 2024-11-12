@@ -1,0 +1,54 @@
+@import "placeholder_s";
+main{
+
+    nav{
+        @extend %s1;
+    }
+
+    #art1{
+        @extend %s2;
+    }
+
+    #art2{
+        @extend %s2;
+    }
+
+    #art3{
+        @extend %s1;
+    }
+
+    #art4{
+        @extend %s2;
+    }
+
+    #art5{
+        @extend %s1;
+    }
+
+    #art6{
+        @extend %s1;
+    }
+
+    #art7{
+        @extend %s2;
+    }
+
+    #art8{
+        @extend %s2;
+    }
+
+    #art9{
+        @extend %offset-s1;
+        @extend %s2;
+    }
+
+    #art10{
+        @extend %offset-s1;
+        @extend %s2;
+    }
+
+}
+footer {
+    @extend %offset-s2;
+    @extend %s1;
+}

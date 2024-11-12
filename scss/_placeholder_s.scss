@@ -1,4 +1,4 @@
-$nb_colonnes: 12;
+$nb_colonnes: 3;
 $largeur_gouttiere: 1%;
 $nb_gouttieres: $nb_colonnes+1;
 $largeur_colonne: calc((100% - ($nb_gouttieres * $largeur_gouttiere)) / $nb_colonnes);
@@ -15,13 +15,20 @@ $largeur_colonne: calc((100% - ($nb_gouttieres * $largeur_gouttiere)) / $nb_colo
 }
 
 
-@media screen and (1440px<width) {
+@media screen and (480px<width) {
     @for $i from 1 through $nb_colonnes{
-        %xl#{$i}{
+        %s#{$i}{
             @include col($i)
         }
-        %offset-xl#{$i} {
+        %offset-s#{$i} {
             @include offset($i);
         }
     }
 }
+
+
+
+
+
+
+

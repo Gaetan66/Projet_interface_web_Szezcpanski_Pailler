@@ -1,7 +1,11 @@
 @import "header";
+@import "nav";
+@import "card";
+@import "footer";
+@import "grille_xs";
+@import "grille_s";
+@import "grille_m";
 @import "grille_xl";
-
-
 %row{
     display: flex;
     flex-direction: row;
@@ -11,4 +15,8 @@
 
 main{
     @extend %row;
+}
+img{
+    max-width: 100%;
+    height: auto;
 }
