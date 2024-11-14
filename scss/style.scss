@@ -5,6 +5,7 @@
 @import "grille_xs";
 @import "grille_s";
 @import "grille_m";
+@import "grille_l";
 @import "grille_xl";
 %row{
     display: flex;
@@ -19,10 +20,4 @@ main{
 img{
     max-width: 100%;
     height: auto;
-}
-#headimg {
-    display: inline;
-    img{
-    width: 10%;
-}
 }
