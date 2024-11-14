@@ -1,7 +1,12 @@
 header{
     width: 99.5%;
     border: 1px black solid;
-    #headiv{
+    #headimg{
+        display: flex;
+        img{
+            width: 5em;
+            height: auto;
+        }
         h1{
         font-weight: bold;
         }
