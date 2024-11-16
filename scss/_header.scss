@@ -17,25 +17,35 @@ header{
             grid-column: 1;
             display: grid;
             grid-template-columns: 1fr auto;  
+            align-items: center;
             img{
                 grid-column: 1;
                 width: 3em;
                 height: 3em;
+                margin: 1.5em;
             }
             h1{
                 grid-column: 2;
                 font-weight: bold;
+                text-shadow: gray 1px 1px 1px;
+            }
             }
         }
         nav {
             grid-column: 3;
             display: flex;
             align-items: center;
-            gap: 0.5em;
+            gap: 1em;
+
+            i{
+                font-size: 1.5em;
+            }
         }
+        p{
+            color: lightslategray;
+            padding-bottom: 2%;
+            margin-left: 1.5em;
+        }
+    
     }
-    p{
-        color: lightslategray;
-        padding-bottom: 2%;
-    }
-}
+    

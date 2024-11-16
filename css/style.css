@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+header {
+  width: 99.5%;
+  box-shadow: gray 2px 2px 5px;
+}
+header #headiv {
+  display: grid;
+  grid-template-columns: auto 1fr auto 15px;
+}
+@media screen and (480px > width) {
+  header #headiv #headimg {
+    grid-column: 1/3;
+  }
+  header #headiv nav {
+    grid-column: 3;
+    grid-row: 2;
+  }
+}
+header #headiv #headimg {
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+header #headiv #headimg img {
+  grid-column: 1;
+  width: 3em;
+  height: 3em;
+  margin: 1.5em;
+}
+header #headiv #headimg h1 {
+  grid-column: 2;
+  font-weight: bold;
+  text-shadow: gray 1px 1px 1px;
+}
+header nav {
+  grid-column: 3;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+header nav i {
+  font-size: 1.5em;
+}
+header p {
+  color: lightslategray;
+  padding-bottom: 2%;
+  margin-left: 1.5em;
+}
+
+main nav {
+  font-family: "Fira Sans Condensed", sans-serif;
+  color: #f57c00;
+  margin-bottom: 2em;
+}
+main nav #titnav {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+main nav div {
+  padding-left: 10px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 10px;
+}
+main nav div img {
+  grid-column: 1;
+}
+main nav div a {
+  grid-column: 2;
+}
+
+.mainart {
+  box-shadow: gray 2px 2px 5px;
+  overflow: hidden;
+  font-family: "Fira Sans Condensed", sans-serif;
+  margin: 10px 3px;
+}
+.mainart h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f57c00;
+  margin: 0.5rem 0;
+}
+.mainart h3::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 5px;
+  background-color: #333;
+  margin-top: 0.3em;
+}
+.mainart a {
+  display: block;
+}
+.mainart div a:first-of-type {
+  text-decoration: underline;
+}
+.mainart p {
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+.mainart div:first-of-type {
+  position: relative;
+  width: 100%;
+}
+.mainart div:first-of-type img {
+  width: 100%;
+  display: block;
+}
+.mainart div:first-of-type .image-title {
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  color: white;
+  padding: 0.5rem;
+  font-size: medium;
+  font-weight: bold;
+  font-family: "Fira Sans Condensed", sans-serif;
+  text-shadow: 2px 2px 3px #333;
+  margin: 0;
+}
+
+.rotate-left {
+  transform: rotateZ(-1deg);
+}
+
+.rotate-right {
+  transform: rotateZ(1deg);
+}
+
+footer {
+  text-align: center;
+  margin: 4%;
+}
+footer a {
+  padding: 5px 3em;
+  width: 80%;
+  text-decoration: none;
+  border: 1px solid #333;
+  border-radius: 20px;
+  align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  body header {
+    width: 99, 5%;
+  }
+  body main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-auto-flow: 11;
+  }
+  body main nav {
+    grid-column: 1/3;
+    grid-row: 1;
+  }
+  body main #art1 {
+    grid-column: 1/3;
+    grid-row: 2;
+  }
+  body main #art2 {
+    grid-column: 1/3;
+    grid-row: 3;
+  }
+  body main #art3 {
+    grid-column: 1/2;
+    grid-row: 5;
+  }
+  body main #art4 {
+    grid-column: 1/3;
+    grid-row: 4;
+  }
+  body main #art5 {
+    grid-column: 2/3;
+    grid-row: 5;
+  }
+  body main #art6 {
+    grid-column: 1/2;
+    grid-row: 6;
+  }
+  body main #art7 {
+    grid-column: 1/3;
+    grid-row: 7;
+  }
+  body main #art8 {
+    grid-column: 1/3;
+    grid-row: 8;
+  }
+  body main #art9 {
+    grid-column: 1/3;
+    grid-row: 9;
+  }
+  body main #art10 {
+    grid-column: 1/3;
+    grid-row: 10;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer a {
+    grid-column: 2/3;
+  }
+}
+@media screen and (480px < width) {
+  footer, main #art6, main #art5, main #art3, main nav {
+    width: 32%;
+    margin-left: 1%;
+  }
+  main #art10, main #art9 {
+    margin-left: 34%;
+  }
+  main #art10, main #art9, main #art8, main #art7, main #art4, main #art2, main #art1 {
+    width: 65%;
+    margin-left: 1%;
+  }
+  footer {
+    margin-left: 67%;
+  }
+}
+@media screen and (960px < width) {
+  footer, main #art6, main #art5, main #art2, main nav {
+    width: 23.75%;
+    margin-left: 1%;
+  }
+  main #art10, main #art9, main #art8, main #art7, main #art4, main #art3, main #art1 {
+    width: 48.5%;
+    margin-left: 1%;
+  }
+  footer {
+    margin-left: 75.25%;
+  }
+}
+@media screen and (1200px < width) {
+  footer, main #art6, main #art5, main #art4, main nav {
+    width: 18.8%;
+    margin-left: 1%;
+  }
+  main #art10, main #art9, main #art8, main #art7, main #art3, main #art2, main #art1 {
+    width: 38.6%;
+    margin-left: 1%;
+  }
+  footer {
+    margin-left: 80.2%;
+  }
+}
+@media screen and (1440px < width) {
+  main #art6, main #art5, main #art3, main nav {
+    width: 15.5%;
+    margin-left: 1%;
+  }
+  footer {
+    width: 23.75%;
+    margin-left: 1%;
+  }
+  main #art10, main #art9, main #art8, main #art7, main #art4, main #art2, main #art1 {
+    width: 32%;
+    margin-left: 1%;
+  }
+  footer {
+    margin-left: 67%;
+  }
+}
+* {
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
